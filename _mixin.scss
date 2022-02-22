@@ -1,8 +1,9 @@
 // Media query 
-$pc-xl: 1800px;
+$pc-xl: 1500px;
 $pc-s: 1200px;
 $tab: 991.98px;
 $sp: 769px;
+$sp-xs: 300px;
 
 @mixin pc-xl {
     @media screen and (min-width: ($pc-xl)) {
@@ -28,6 +29,12 @@ $sp: 769px;
     }
 }
 
+@mixin sp-xs {
+    @media screen and (max-width: ($sp-xs)) {
+        @content;
+    }
+}
+
 // Flexbox
 @mixin flex($justify:space-between,$align:center) {
     display: flex;
@@ -41,6 +48,21 @@ $sp: 769px;
     -ms-flex-align: $align;//IE対応
 }
 
-@mixin responsiveFlex {
-    flex-direction: column;
+@mixin responsiveFlex($justify:space-between,$align:center) {
+    @include flex;
+    @include sp {
+        flex-direction: column;
+    }
 }
+
+// Bottun
+@mixin commonButton {
+    border-radius: 100px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition: .3s;
+    line-height: 1;
+}
+
