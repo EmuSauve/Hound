@@ -1,0 +1,46 @@
+// Media query 
+$pc-xl: 1800px;
+$pc-s: 1200px;
+$tab: 991.98px;
+$sp: 769px;
+
+@mixin pc-xl {
+    @media screen and (min-width: ($pc-xl)) {
+        @content;
+    }
+}
+
+@mixin pc-s {
+    @media screen and (max-width: ($pc-s)) {
+        @content;
+    }
+}
+
+@mixin tab {
+    @media screen and (max-width: ($tab)) {
+        @content;
+    }
+}
+
+@mixin sp {
+    @media screen and (max-width: ($sp)) {
+        @content;
+    }
+}
+
+// Flexbox
+@mixin flex($justify:space-between,$align:center) {
+    display: flex;
+    display: -webkit-flex;//Safari,Android,iOS対応
+    display: -ms-flexbox;//IE対応
+    justify-content: $justify;
+    -webkit-box-pack: $justify;//Safari,Android,iOS対応
+    -ms-flex-pack: $justify;//IE対応
+    align-items: $align;
+    -webkit-box-align: $align;//Safari,Android,iOS対応
+    -ms-flex-align: $align;//IE対応
+}
+
+@mixin responsiveFlex {
+    flex-direction: column;
+}

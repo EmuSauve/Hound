@@ -1,0 +1,34 @@
+<svg width="359" height="212" viewBox="0 0 359 212" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.19141 184.016H45.1142L45.2892 6.39975L46.6891 2.89993L50.1889 1.5H311.101L313.201 3.59989L314.951 7.09972V185.066H357.823V192.765L354.149 196.615L348.199 198.54H10.4659L4.69123 196.965L1.19141 193.115V184.016Z" fill="white"/>
+<rect x="72" y="44" width="215" height="72" fill="#71B82B"/>
+<rect x="72" y="22" width="215" height="16" fill="#EBEBEB"/>
+<rect width="67.1875" height="30" transform="matrix(1 0 0 -1 72 152)" fill="#EBEBEB"/>
+<rect width="67.1875" height="3" transform="matrix(1 0 0 -1 72 158)" fill="#EBEBEB"/>
+<rect width="67.1875" height="3" transform="matrix(1 0 0 -1 72 164)" fill="#EBEBEB"/>
+<rect width="67.1875" height="3" transform="matrix(1 0 0 -1 72 170)" fill="#EBEBEB"/>
+<rect width="67.1875" height="30" transform="matrix(1 0 0 -1 146 152)" fill="#EBEBEB"/>
+<rect width="67.1875" height="3" transform="matrix(1 0 0 -1 146 158)" fill="#EBEBEB"/>
+<rect width="67.1875" height="3" transform="matrix(1 0 0 -1 146 164)" fill="#EBEBEB"/>
+<rect width="67.1875" height="3" transform="matrix(1 0 0 -1 146 170)" fill="#EBEBEB"/>
+<rect width="67.1875" height="30" transform="matrix(1 0 0 -1 220 152)" fill="#EBEBEB"/>
+<rect width="67.1875" height="3" transform="matrix(1 0 0 -1 220 158)" fill="#EBEBEB"/>
+<rect width="67.1875" height="3" transform="matrix(1 0 0 -1 220 164)" fill="#EBEBEB"/>
+<rect width="67.1875" height="3" transform="matrix(1 0 0 -1 220 170)" fill="#EBEBEB"/>
+<path d="M45.1035 183.727L45.2195 6.2554C45.2195 3.35291 47.5764 1 50.4836 1H309.877C312.785 1 315.142 3.35291 315.142 6.2554L315.036 183.732" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1 184.414H357.998V193.21H1V184.414Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M57.0645 11.7615H303.181V172.97H57.0645V11.7615Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M204.777 184.865C204.777 186.525 202.96 187.871 200.718 187.871H158.419C156.178 187.871 154.36 186.525 154.36 184.865" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M357.819 192.98C355.647 196.481 351.351 198.864 346.411 198.864H12.5737C7.53027 198.864 3.16198 196.381 1.03516 192.759" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M275.562 62.397H332.898C337.626 62.397 341.459 66.4105 341.459 71.3614V201.852C341.459 206.802 337.626 210.816 332.898 210.816H275.562C270.833 210.816 267 206.802 267 201.852V71.3614C267 66.4105 270.833 62.397 275.562 62.397Z" fill="white"/>
+<rect x="277" y="84" width="54" height="15" fill="#EBEBEB"/>
+<rect x="277" y="103" width="54" height="49" fill="#71B82B"/>
+<rect x="277" y="156" width="54" height="24" fill="#EBEBEB"/>
+<rect x="277" y="182" width="54" height="2" fill="#EBEBEB"/>
+<rect x="277" y="186" width="54" height="2" fill="#EBEBEB"/>
+<rect x="277" y="190" width="54" height="2" fill="#EBEBEB"/>
+<rect x="277" y="191" width="54" height="2" fill="#EBEBEB"/>
+<path d="M275.562 62.397H332.898C337.626 62.397 341.459 66.4105 341.459 71.3614V201.851C341.459 206.802 337.626 210.816 332.898 210.816H275.562C270.833 210.816 267 206.802 267 201.851V71.3614C267 66.4105 270.833 62.397 275.562 62.397Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M270.838 77.5554H337.622V192.239H270.838V77.5554Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M304.23 196.385C307.325 196.385 309.833 198.893 309.833 201.988C309.833 205.083 307.325 207.592 304.23 207.592C301.135 207.592 298.626 205.083 298.626 201.988C298.626 198.893 301.135 196.385 304.23 196.385Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M296.861 69.2649H311.599C312.065 69.2649 312.443 69.6429 312.443 70.1093C312.443 70.5756 312.065 70.9537 311.599 70.9537H296.861C296.394 70.9537 296.016 70.5756 296.016 70.1093C296.016 69.6429 296.394 69.2649 296.861 69.2649Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

@@ -1,0 +1,181 @@
+$primaryBrandColor: #FDE332;
+$secondaryBrandColor: #71B82B;
+$tertiaryBrandColor: #151515;
+
+$textColor: #151515;
+
+$primaryBackgroundColor: #F5F7F8;
+$secondaryBackgroundColor: #FFFFFF;
+
+$primaryFontJP: 'Noto Sans JP', sans-serif;
+$secondaryFontJP: 'Zen Maru Gothic', sans-serif;
+
+@import './mixin';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $primaryBackgroundColor;
+    font-family: $primaryFontJP;
+    font-weight: 400;
+    font-size: 16px;
+    color: $textColor;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+button, .button-link {
+    cursor: pointer;
+}
+
+.contentMaxWidth {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1400px;
+}
+
+.commonButton {
+    border-radius: 100px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition: .3s;
+    line-height: 1;
+}
+
+.secondaryButton {
+    border: none;
+    color: white;
+    padding: 13px 36px;
+    background: $secondaryBrandColor;
+    font-weight: 500;
+}
+
+header {
+    background-color: $primaryBrandColor;
+    padding: 26px 0 8px;
+    .contentMaxWidth {
+        @include flex;
+    }
+    ul {
+        list-style-type: none;
+    }
+    img {
+        width: 170px;
+        @include pc-s {
+            width: 140px;
+        }
+    }
+    .secondaryButton {
+        font-size: 14px;
+    }
+}
+
+.headerNav {
+    a:not(.button-link) {
+        color: $textColor;
+        position: relative;
+        &::before{
+            content: "";
+            position: absolute;
+            display: block;
+            width: 100%;
+            height: 3px;
+            bottom: -10px;
+            left: 0;
+            background-color: $tertiaryBrandColor;
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+        }
+        &:hover::before {
+            transform: scaleX(1);
+        }
+    }
+    .button-link{
+        &:hover{
+            background: $tertiaryBrandColor;
+        }
+    }
+}
+.desktopMenu {
+    width: 740px;
+    @include flex;
+    li {
+        display: contents;
+    }
+    a {
+        font-size: 14px;
+
+    }
+    @include pc-s {
+        width: 630px;
+        a {
+            font-size: 13px;
+        }
+        .button-link {
+            font-size: 13px;
+            padding: 10px 20px;
+        }
+    }
+    @include tab {
+        display: none;
+    }
+}
+
+.mobileMenu {
+    display: none;
+    img {
+        width: 30px;
+    }
+    @include tab {
+        display: block;
+    }
+}
+
+.heroSpace {
+    background-color: $primaryBrandColor;
+    .contentMaxWidth {
+        @include flex;
+        @include tab {
+            @include responsiveFlex;
+        }
+    }
+    padding: 58px 0;
+}
+
+.heroTextBox {
+    width: 46%;
+}
+
+.heroTitle {
+    font-family: $secondaryFontJP;
+    font-size: 4vw;
+    font-weight: 500;
+    margin-bottom: 20px;
+    @include pc-xl {
+        font-size: 70px;
+    }
+}
+
+.heroParagraph {
+    font-size: 13px;
+    line-height: 2rem;
+}
+
+.heroImageBox {
+    width: 48%;
+    img {
+        width: 100%;
+    }
+}
+
+
+

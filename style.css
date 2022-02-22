@@ -1,0 +1,197 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #F5F7F8;
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #151515;
+}
+
+a {
+  text-decoration: none;
+}
+
+button, .button-link {
+  cursor: pointer;
+}
+
+.contentMaxWidth {
+  width: 80%;
+  margin: 0 auto;
+  max-width: 1400px;
+}
+
+.commonButton {
+  border-radius: 100px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  transition: 0.3s;
+  line-height: 1;
+}
+
+.secondaryButton {
+  border: none;
+  color: white;
+  padding: 13px 36px;
+  background: #71B82B;
+  font-weight: 500;
+}
+
+header {
+  background-color: #FDE332;
+  padding: 26px 0 8px;
+}
+header .contentMaxWidth {
+  display: flex;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  justify-content: space-between;
+  -webkit-box-pack: space-between;
+  -ms-flex-pack: space-between;
+  align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+}
+header ul {
+  list-style-type: none;
+}
+header img {
+  width: 170px;
+}
+@media screen and (max-width: 1200px) {
+  header img {
+    width: 140px;
+  }
+}
+header .secondaryButton {
+  font-size: 14px;
+}
+
+.headerNav a:not(.button-link) {
+  color: #151515;
+  position: relative;
+}
+.headerNav a:not(.button-link)::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 3px;
+  bottom: -10px;
+  left: 0;
+  background-color: #151515;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+.headerNav a:not(.button-link):hover::before {
+  transform: scaleX(1);
+}
+.headerNav .button-link:hover {
+  background: #151515;
+}
+
+.desktopMenu {
+  width: 740px;
+  display: flex;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  justify-content: space-between;
+  -webkit-box-pack: space-between;
+  -ms-flex-pack: space-between;
+  align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+}
+.desktopMenu li {
+  display: contents;
+}
+.desktopMenu a {
+  font-size: 14px;
+}
+@media screen and (max-width: 1200px) {
+  .desktopMenu {
+    width: 630px;
+  }
+  .desktopMenu a {
+    font-size: 13px;
+  }
+  .desktopMenu .button-link {
+    font-size: 13px;
+    padding: 10px 20px;
+  }
+}
+@media screen and (max-width: 991.98px) {
+  .desktopMenu {
+    display: none;
+  }
+}
+
+.mobileMenu {
+  display: none;
+}
+.mobileMenu img {
+  width: 30px;
+}
+@media screen and (max-width: 991.98px) {
+  .mobileMenu {
+    display: block;
+  }
+}
+
+.heroSpace {
+  background-color: #FDE332;
+  padding: 58px 0;
+}
+.heroSpace .contentMaxWidth {
+  display: flex;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  justify-content: space-between;
+  -webkit-box-pack: space-between;
+  -ms-flex-pack: space-between;
+  align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+}
+@media screen and (max-width: 991.98px) {
+  .heroSpace .contentMaxWidth {
+    flex-direction: column;
+  }
+}
+
+.heroTextBox {
+  width: 46%;
+}
+
+.heroTitle {
+  font-family: "Zen Maru Gothic", sans-serif;
+  font-size: 4vw;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 1800px) {
+  .heroTitle {
+    font-size: 70px;
+  }
+}
+
+.heroParagraph {
+  font-size: 13px;
+  line-height: 2rem;
+}
+
+.heroImageBox {
+  width: 48%;
+}
+.heroImageBox img {
+  width: 100%;
+}
+
+/*# sourceMappingURL=style.css.map */
