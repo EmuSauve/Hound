@@ -1,0 +1,77 @@
+.h1-jp {
+    font-family: $h-jp-font;
+    font-size: 25px;
+    font-weight: 400;
+    @include tab{
+        font-size: 20px;
+    }
+}
+
+.h1-en {
+    font-family: $h-en-font;
+    font-size: 80px;
+    font-weight: 500;
+    @include tab{
+        font-size: 50px;
+    }
+}
+
+.h2-jp {
+    font-family: $h-jp-font;
+    font-size: 50px;
+    font-weight: 500;
+    @include tab{
+        font-size: 35px;
+    }
+}
+
+.h3-jp {
+    font-family: $h-jp-font;
+    font-size: 25px;
+    font-weight: 400;
+    @include tab{
+        font-size: 20px;
+    }
+}
+
+.h3-en {
+    font-family: $h-en-font;
+    font-size: 40px;
+    font-weight: 500;
+    padding-bottom: 5px;
+    @include tab{
+        font-size: 30px;
+    }
+}
+
+.h4-jp {
+    font-family: $h-jp-font;
+    font-size: 20px;
+    font-weight: 700;
+    @include tab{
+        font-size: 17px;
+    }
+}
+
+.h5-jp {
+    font-family: $h-jp-font;
+    font-size: 16px;
+    font-weight: 700;
+    @include tab{
+        font-size: 15px;
+    }
+}
+
+.h-line {
+    border: 5px solid $brand-color-primary;
+    width: 80px;
+    margin: auto;
+    margin-bottom: $padding-sm-desktop;
+}
+
+.text-strong {
+    font-size: 40px;
+    @include tab{
+        font-size: 20px;
+    }
+}

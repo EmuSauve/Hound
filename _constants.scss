@@ -1,11 +1,32 @@
-$primaryBrandColor: #FDE332;
-$secondaryBrandColor: #71B82B;
-$tertiaryBrandColor: #151515;
+$brand-color-primary: #FDE332;
+$brand-color-secondary: #71B82B;
+$brand-color-tertiary: #151515;
 
-$textColor: #151515;
+$text-color: #151515;
+$text-color-reverse: #FFFFFF;
 
-$primaryBackgroundColor: #F5F7F8;
-$secondaryBackgroundColor: #FFFFFF;
+$background-color-primary: #F5F7F8;
+$background-color-secondary: #FFFFFF;
 
-$primaryFontJP: 'Noto Sans JP', sans-serif;
-$secondaryFontJP: 'Zen Maru Gothic', sans-serif;
+$font-jp-primary: 'Noto Sans JP', sans-serif;
+$font-jp-secondary: 'Zen Maru Gothic', sans-serif;
+
+$h-jp-font: 'Noto Sans JP', sans-serif;
+$h-en-font: 'Montserrat', sans-serif;;
+
+$padding-xl-desktop: 200px;
+$padding-lg-desktop: 130px;
+$padding-md-desktop: 100px;
+$padding-sm-desktop: 50px;
+$padding-xs-desktop: 20px;
+
+$padding-xl-mobile: 100px;
+$padding-lg-mobile: 80px;
+$padding-md-mobile: 50px;
+$padding-sm-mobile: 30px;
+$padding-xs-mobile: 20px;
+
+$content-max-width: 1400px;
+
+
+

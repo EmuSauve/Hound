@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,31 +11,35 @@
     <!-- Google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru&family=Noto+Sans+JP:wght@400;500;700&family=Zen+Maru+Gothic:wght@400;500&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kiwi+Maru&family=Montserrat:wght@400;500;700&family=Noto+Sans+JP:wght@400;500;700&family=Zen+Maru+Gothic:wght@400;500&display=swap"
+        rel="stylesheet">
+    <!-- Favicon -->
     <link rel="icon" href="images/favicon.ico">
 </head>
+
 <body>
 
     <!-- Header -->
     <header>
-        <div class="contentMaxWidth flexbox">
+        <div class="content-max-width flexbox">
             <!-- Logo -->
             <a href="index.html"><img src="images/logo_black.png" alt="株式会社HOUND/Home"></a>
             <!-- Desktop Menu -->
-            <nav class="headerNav">
-                <ul class="desktopMenu flexbox">
+            <nav class="header-nav">
+                <ul class="desktop-menu flexbox">
                     <li><a href="about.html">私たちについて</a></li>
                     <li><a href="movie.html">映像事業</a></li>
                     <li><a href="event.html">イベント事業</a></li>
                     <li><a href="web/marketing.html">Web/マーケティング事業</a></li>
                     <li><a href="recruit.html">採用情報</a></li>
-                    <li><a class="button-link secondaryButton" href="contact.html">お問い合わせ</a></li>
+                    <li><a class="button-link button-secondary" href="contact.html">お問い合わせ</a></li>
                 </ul>
-             </nav>
-             <!-- Tablet&phone Menu -->
-             <div class="mobileMenu">
+            </nav>
+            <!-- Tablet&phone Menu -->
+            <div class="mobile-menu">
                 <a href="#"><img src="images/hamburger.svg" alt="メニュー"></a>
-             </div>
+            </div>
         </div>
 
 
@@ -42,17 +47,162 @@
     </header>
 
     <!-- Hero space -->
-    <section class="heroSpace">
-        <div class="contentMaxWidth responsiveFlexbox">
-            <div class="heroTextBox">
-                <p class="heroTitle">すべてのお客様の<br>利益を守る番犬に</p>
-                <p class="heroParagraph">お客様のこうしたい・ああしたいといった悩みを解決し、「お客様の利益を守る番犬になりたい」という思いを込めて HOUND（猟犬）を設立致しました。映像からイベント・web制作まで、御社のマーケティングをトータルサポート致します。</p>
+    <section class="hero-space">
+        <div class="content-max-width responsive-flexbox">
+            <div class="hero-textbox">
+                <p class="hero-title">すべてのお客様の<br>利益を守る番犬に</p>
+                <p class="hero-paragraph">お客様のこうしたい・ああしたいといった悩みを解決し、「お客様の利益を守る番犬になりたい」という思いを込めて
+                    HOUND（猟犬）を設立致しました。映像からイベント・web制作まで、御社のマーケティングをトータルサポート致します。</p>
             </div>
-            <div class="heroImageBox">
+            <div class="hero-imagebox">
                 <img src="images/illustration_hero.svg" alt="映像・イベント・web・マーケティング制作イメージ">
             </div>
         </div>
     </section>
-    
+
+    <!-- Main -->
+    <!-- HOUNDの特徴 -->
+    <section class="top-feature">
+        <div class="content-max-width align-center">
+            <h3 class="h3-jp">HOUNDの特徴</h3>
+            <h3 class="h3-en">FEATURE</h3>
+            <hr class="h-line">
+            <div class="responsive-flexbox three-column-flexbox">
+                <div class="card">
+                    <img src="images/illustration_feature1.svg" alt="ワンストップソリューションイメージ">
+                    <h4 class="h4-jp">企画から制作まで一貫して行います</h4>
+                </div>
+                <div class="card">
+                    <img src="images/illustration_feature2.svg" alt="利益イメージ">
+                    <h4 class="h4-jp">お客様に最大限に利益をもたらす施策を提案いたします</h4>
+                </div>
+                <div class="card">
+                    <img src="images/illustration_feature3.svg" alt="細部へのこだわりイメージ">
+                    <h4 class="h4-jp">経験豊富なスタッフが細部までこだわって制作いたします</h4>
+                </div>
+            </div>
+            <a class="button-primary" href="about.html">私たちについて</a>
+        </div>
+    </section>
+
+    <!-- 映像事業 -->
+    <section class="top-services background-color-sub">
+        <div class="content-max-width">
+            <div class="responsive-flexbox">
+                <div class="service-contentbox align-left">
+                    <h3 class="h3-jp">映像事業</h3>
+                    <h3 class="h3-en">MOVIE</h3>
+                    <hr class="h-line">
+                    <p>HOUNDでは企業ムービー、番組/CM、広告PR動画（広告素材作成）、YouTube動画など、幅広い分野の動画制作をご依頼いただけます。</p>
+                    <div class="responsive-flexbox three-column-flexbox">
+                        <div class="youtube">
+
+                        </div>
+                        <div class="youtube">
+
+                        </div>
+                        <div class="youtube">
+
+                        </div>
+                    </div>
+                    <a class="button-primary" href="movie.html">映像事業</a>
+                </div>
+                <div class="service-imagebox background-right-ractangle">
+                    <img src="images/illustration_movie.svg" alt="映像事業イメージ">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- イベント事業 -->
+    <section class="top-services reverse-layout">
+        <div class="content-max-width">
+            <div class="responsive-flexbox">
+                <div class="service-contentbox align-left">
+                    <h3 class="h3-jp">イベント事業</h3>
+                    <h3 class="h3-en">EVENT</h3>
+                    <hr class="h-line">
+                    <p>展示会のブース運営や商業施設でのイベントなど、HOUNDではイベントの設計、デザイン、施工、管理までトータルサポートいたします。</p>
+                    <div class="responsive-flexbox three-column-flexbox">
+                        <div class="youtube">
+
+                        </div>
+                        <div class="youtube">
+
+                        </div>
+                        <div class="youtube">
+
+                        </div>
+                    </div>
+                    <a class="button-primary" href="movie.html">イベント事業</a>
+                </div>
+                <div class="service-imagebox background-left-ractangle">
+                    <img src="images/illustration_event.svg" alt="イベント事業イメージ">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Web/マーケティング事業 -->
+    <section class="top-services background-color-sub">
+        <div class="content-max-width">
+            <div class="responsive-flexbox">
+                <div class="service-contentbox align-left">
+                    <h3 class="h3-jp">Web/マーケティング事業</h3>
+                    <h3 class="h3-en">Web&Marketing</h3>
+                    <hr class="h-line">
+                    <p>テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります</p>
+                    <div class="responsive-flexbox three-column-flexbox">
+                        <div class="card-outline">
+                            <p>Web制作</p>
+                        </div>
+                        <div class="card-outline">
+                            <p>SNS運用</p>
+                        </div>
+                        <div class="card-outline">
+                            <p>広告運用</p>
+                        </div>
+                    </div>
+                    <a class="button-primary" href="movie.html">Web/マーケティング事業</a>
+                </div>
+                <div class="service-imagebox background-right-ractangle">
+                    <img src="images/illustration_webandmarketing.svg" alt="Web/マーケティング事業イメージ">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- contact -->
+    <section class="footer-contact">
+        <div class="content-max-width responsive-flexbox">
+            <div class="contact-text-box">
+                <h3 class="h3-jp">お問い合わせ</h3>
+                <h1 class="h1-en">CONTACT</h3>
+                <p>制作に関するお見積り（無料)・ご依頼はもちろん、現状何をすればいいかもわからないなどのご相談も承っております。</p>
+            </div>
+            <div class="contact-info-box responsive-flexbox">
+                <div class="contact-mail">
+                    <h4 class="h4-jp">メールでのお問い合わせ</h4>
+                    <a class="button-secondary" href="#"><img src="images/mail.svg" alt="">フォームはこちら</a>
+                </div>
+                <div class="contact-phone">
+                    <h4 class="h4-jp">電話でのお問い合わせ</h4>
+                    <div class="flexbox">
+                        <img src="images/phone.svg" alt="">
+                        <p class="phone-text">03-6709-4665</p>
+                    </div>
+                    <p>受付時間：平日 9:00〜19:00</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+
+    </footer>
+
+
 </body>
+
 </html>

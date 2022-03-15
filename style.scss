@@ -1,5 +1,7 @@
 @import './constants';
 @import './mixin';
+@import './headings';
+@import './components';
 
 * {
     margin: 0;
@@ -7,47 +9,46 @@
     box-sizing: border-box;
 }
 
+html, body 
+{ 
+ height: 100%;
+ overflow-x: hidden;
+}
+
 body {
-    background-color: $primaryBackgroundColor;
-    font-family: $primaryFontJP;
+    background-color: $background-color-primary;
+    font-family: $font-jp-primary;
     font-weight: 400;
     font-size: 16px;
-    color: $textColor;
+    color: $text-color;
+    @include sp{
+        font-size: 15px;
+    }
 }
 
 a {
     text-decoration: none;
 }
 
-
 button, .button-link {
     cursor: pointer;
 }
 
-.contentMaxWidth {
+.content-max-width {
     width: 80%;
     margin: 0 auto;
-    max-width: 1400px;
+    max-width: $content-max-width;
     @include sp-xs {
         width: 90%;
     }
-}
-
-.secondaryButton {
-    @include commonButton;
-    border: none;
-    color: white;
-    padding: 13px 36px;
-    background: $secondaryBrandColor;
-    font-weight: 500;
 }
 
 .flexbox {
     @include flex;
 }
 
-.responsiveFlexbox {
-    @include responsiveFlex;
+.responsive-flexbox {
+    @include responsive-flex;
     & > * {
         @include sp {
             width: 100% !important;
@@ -56,8 +57,31 @@ button, .button-link {
     }
 }
 
+.three-column-flexbox{
+    align-items: stretch;
+    & > * {
+        width: 32%;
+    }
+}
+
+.align-center {
+    text-align: center;
+}
+
+.align-left {
+    text-align: left;
+    .h-line {
+        margin-left: 0;
+    }
+}
+
+.background-color-sub {
+    background-color: $background-color-secondary;
+}
+
+
 header {
-    background-color: $primaryBrandColor;
+    background-color: $brand-color-primary;
     padding: 26px 0 8px;
     ul {
         list-style-type: none;
@@ -71,14 +95,14 @@ header {
             width: 100px;
         }
     }
-    .secondaryButton {
+    .button-secondary {
         font-size: 14px;
     }
 }
 
-.headerNav {
+.header-nav {
     a:not(.button-link) {
-        color: $textColor;
+        color: $text-color;
         position: relative;
         &::before{
             content: "";
@@ -88,7 +112,7 @@ header {
             height: 3px;
             bottom: -10px;
             left: 0;
-            background-color: $tertiaryBrandColor;
+            background-color: $brand-color-tertiary;
             transform: scaleX(0);
             transition: transform 0.3s ease;
         }
@@ -96,13 +120,8 @@ header {
             transform: scaleX(1);
         }
     }
-    .button-link{
-        &:hover{
-            background: $tertiaryBrandColor;
-        }
-    }
 }
-.desktopMenu {
+.desktop-menu {
     width: 740px;
     li {
         display: contents;
@@ -126,7 +145,7 @@ header {
     }
 }
 
-.mobileMenu {
+.mobile-menu {
     display: none;
     img {
         width: 30px;
@@ -136,22 +155,22 @@ header {
     }
 }
 
-.heroSpace {
-    background-color: $primaryBrandColor;
+.hero-space {
+    background-color: $brand-color-primary;
     padding: 58px 0;
     @include sp {
-        .responsiveFlexbox {
+        .responsive-flexbox {
             flex-direction: column-reverse;
         }
     }
 }
 
-.heroTextBox {
+.hero-textbox {
     width: 46%;
 }
 
-.heroTitle {
-    font-family: $secondaryFontJP;
+.hero-title {
+    font-family: $font-jp-secondary;
     font-size: 4vw;
     font-weight: 500;
     margin-bottom: 25px;
@@ -166,7 +185,7 @@ header {
     }
 }
 
-.heroParagraph {
+.hero-paragraph {
     font-size: 13px;
     line-height: 2rem;
     @include sp {
@@ -174,7 +193,7 @@ header {
     }
 }
 
-.heroImageBox {
+.hero-imagebox {
     width: 48%;
     margin-bottom: 25px;
     img {
@@ -182,5 +201,125 @@ header {
     }
 }
 
+.top-feature {
+    padding: $padding-md-desktop 0;
+    .three-column-flexbox{
+        padding-bottom: $padding-sm-desktop - $padding-xs-desktop;
+    }
+}
 
+.service-contentbox {
+    width: 60%;
+}
 
+.service-imagebox {
+    width: 30%;
+    position: relative;
+    @include pc-s {
+        width: 35%;
+    }
+}
+
+.top-services {
+    position: relative;
+    padding: $padding-md-desktop 0;
+    p {
+        padding-bottom: $padding-sm-desktop;
+    }
+    .content-max-width {
+        position: relative;
+    }
+    .three-column-flexbox {
+        padding-bottom: $padding-sm-desktop - $padding-xs-desktop;
+    }
+    .service-contentbox,.service-imagebox {
+        z-index: 1;
+    }
+    img {
+        width: 100%;
+        @include sp {
+            width: 80%;
+            margin-bottom: 60px;
+        }
+    }
+    @include sp {
+        .responsive-flexbox {
+            flex-direction: column-reverse;
+        }
+    }
+}
+
+.reverse-layout {
+    .responsive-flexbox {
+        flex-direction: row-reverse;
+        @include sp {
+            flex-direction: column-reverse;
+        }
+    }
+}
+
+.background-right-ractangle::before {
+    content: '';
+    background-color: $brand-color-primary;
+    position: absolute;
+    height: 300px;
+    top: calc(50% - 150px);
+    right: -200px;
+    left: 20%;
+    clip-path: polygon(15% 0, 100% 0, 100% 100%, 0% 100%);
+    z-index: -1;
+    @include sp {
+        height: 100%;
+        top: -30px;
+    }
+}
+
+.background-left-ractangle::before {
+    content: '';
+    background-color: $brand-color-primary;
+    position: absolute;
+    height: 300px;
+    top: calc(50% - 150px);
+    left: -200px;
+    right: 20%;
+    clip-path: polygon(0 0, 85% 0, 100% 100%, 0% 100%);
+    z-index: -1;
+    @include sp {
+        height: 100%;
+        top: -30px;
+    }
+}
+
+.youtube {
+    background-color: gray;
+    height: 150px;
+}
+
+.footer-contact {
+    background-color: $brand-color-primary;
+    .h1-en {
+        color: $text-color-reverse;
+    }
+}
+
+.contact-text-box {
+    padding: $padding-md-desktop 0;
+    width: 49%;
+    p {
+        width: 75%;
+    }
+    background-image: url(images/illustration_contact.svg);
+    background-repeat: no-repeat;
+    background-position: 100% -200%;
+
+}
+
+.contact-info-box {
+    padding: $padding-md-desktop 0;
+    width: 49%;
+}
+
+.phone-text {
+    font-size: 36px;
+    font-weight: 500;
+}

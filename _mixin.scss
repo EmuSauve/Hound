@@ -5,6 +5,7 @@ $tab: 991.98px;
 $sp: 769px;
 $sp-xs: 300px;
 
+
 @mixin pc-xl {
     @media screen and (min-width: ($pc-xl)) {
         @content;
@@ -48,7 +49,7 @@ $sp-xs: 300px;
     -ms-flex-align: $align;//IE対応
 }
 
-@mixin responsiveFlex($justify:space-between,$align:center) {
+@mixin responsive-flex($justify:space-between,$align:center) {
     @include flex;
     @include sp {
         flex-direction: column;
@@ -56,7 +57,7 @@ $sp-xs: 300px;
 }
 
 // Bottun
-@mixin commonButton {
+@mixin button-common {
     border-radius: 100px;
     text-align: center;
     text-decoration: none;
@@ -64,5 +65,9 @@ $sp-xs: 300px;
     font-size: 16px;
     transition: .3s;
     line-height: 1;
+    @include sp{
+        width: 100%;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
 }
-
