@@ -1,0 +1,166 @@
+.button-primary {
+    @include button-common;
+    border: none;
+    color: $text-color;
+    padding: 13px 95px;
+    background: $brand-color-primary;
+    font-weight: 700;
+    background-image: url(../images/arrow-right-black.svg);
+    background-repeat: no-repeat;
+    background-position: right 24px center;
+    &:hover {
+        background-color: $brand-color-tertiary;
+        background-image: url(../images/arrow-right-white.svg);
+        color: $text-color-reverse;
+    }
+}
+
+.button-primary-secondarycolor {
+    @include button-common;
+    border: none;
+    color: $text-color-reverse;
+    padding: 13px 95px;
+    background: $brand-color-secondary;
+    font-weight: 700;
+    background-image: url(../images/arrow-right-white.svg);
+    background-repeat: no-repeat;
+    background-position: right 24px center;
+    &:hover {
+        background-color: $brand-color-tertiary;
+        color: $text-color-reverse;
+    }
+}
+
+.button-secondary {
+    @include button-common;
+    border: none;
+    color: white;
+    padding: 13px 36px;
+    background: $brand-color-secondary;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+        background: $brand-color-tertiary;
+    }
+
+    img {
+        margin-right: 10px;
+        padding-top: 2px;
+    }
+}
+
+.button-outline {
+    @include button-common;
+    border: none;
+    color: $brand-color-tertiary;
+    outline: 1px solid $brand-color-tertiary;
+    padding: 13px 36px;
+    background: $background-color-secondary;
+    font-size: 15px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: var(--padding-xs) 0 0;
+
+    &:hover {
+        background: $brand-color-tertiary;
+        color: $background-color-secondary;
+    }
+}
+
+.button-card {
+    @include button-common;
+    border-radius: 10px;
+    background-color: $background-color-secondary;
+    text-align: left;
+    color: $text-color;
+    padding: 50px 0 50px 24px;
+    background-image: url(../images/arrow-down-black.svg);
+    background-repeat: no-repeat;
+    background-position: right 24px center;
+    &:hover {
+        background-color: $brand-color-tertiary;
+        background-image: url(../images/arrow-down-white.svg);
+        color: $text-color-reverse;
+    }
+    @include tab {
+        text-align: left !important;
+        padding-left: 24px;
+    }
+}
+
+
+.card {
+    background-color: $background-color-secondary;
+    box-shadow: 0px 2px 40px 0px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    padding: 50px;
+    img {
+        width: 100%;
+        margin-bottom: var(--padding-xs);
+    }
+    @include tab {
+        padding: 30px;
+    }
+}
+
+.card-icon {
+    img {
+        width: 60%;
+        @include pc-xl {
+            width: 50%;
+        }
+        @include sp {
+            width: 40%;
+        }
+    }
+}
+
+.card-outline {
+    border: 1px solid $text-color;
+    border-radius: 10px;
+    text-align: center;
+    align-items: center;
+
+    p {
+        padding: 30px 0 !important;
+    }
+}
+
+.text-link {
+    color: $text-color-reverse;
+    text-decoration: underline;
+}
+
+.text-link-black {
+    color: $text-color;
+    text-decoration: underline;
+}
+
+.youtube {
+    background-color: gray;
+    height: 150px;
+    margin-bottom: var(--padding-xs);
+}
+
+.card-transparent {
+    padding-bottom: 20px;
+
+    iframe {
+        width: 100%;
+        height: 250px;
+    }
+
+    @include sp {
+        text-align: left;
+    }
+}
+
+.card-tag {
+    background-color: rgb(196, 196, 196);
+    padding: 3px 10px;
+}

@@ -1,0 +1,91 @@
+.footer-contact {
+    background-color: $brand-color-primary;
+    padding: var(--padding-md) 0;
+    margin-top: var(--padding-lg);
+    h1.en {
+        color: $text-color-reverse;
+    }
+}
+
+.footer-contact-top {
+    margin-top: 0 !important;
+}
+
+.contact-text-box {
+    width: 40%;
+    @include pc-s {
+        width: 55%;
+    }
+    @include sp {
+        margin-bottom: var(--padding-sm);
+        h1.en {
+            margin-bottom: var(--padding-xs);
+        }
+    }
+}
+
+.contact-info-box {
+    align-items: stretch;
+    display: flex;
+    @include pc-s {
+        flex-direction: column;
+    }
+}
+
+.phone-text {
+    font-size: 33px;
+    font-weight: 500;
+    padding: 0 0 5px 10px;
+}
+
+.contact-mail {
+    display: flex;
+    // justify-content: space-between;
+    flex-direction: column;
+    position: relative;
+    margin-right: 4vw;
+    @include pc-xl{
+        margin-right: 100px;
+    }
+    @include pc-s {
+        margin: 0 0 40px 0;
+        align-items: center;
+    }
+    h4.jp {
+        margin-bottom: 30px;
+        @include pc-s {
+            margin-bottom: 10px;
+        }
+    }
+}
+
+.contact-mail::after {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    margin: 0 2vw;
+    content: "";
+    width: 1px;
+    height: 100%;
+    background-color: #333;
+    @include pc-xl{
+        margin: 0 50px;
+    }
+    @include pc-s {
+        display: none;
+    }
+}
+
+.contact-phone {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    @include pc-s {
+        align-items: center;
+    }
+    h4.jp {
+        @include pc-s {
+            margin-bottom: 10px;
+        }
+    }
+}

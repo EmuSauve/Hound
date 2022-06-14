@@ -1,0 +1,135 @@
+.hero-space {
+    background-color: $brand-color-primary;
+    padding: 58px 0;
+    @include sp {
+        .responsive-flexbox {
+            flex-direction: column-reverse;
+        }
+    }
+}
+
+.hero-textbox {
+    width: 46%;
+}
+
+.hero-title {
+    font-family: $font-jp-secondary;
+    font-size: 4vw;
+    line-height: 1.5;
+    font-weight: 500;
+    margin-bottom: 25px;
+    @include pc-xl {
+        font-size: 60px;
+    }
+    @include sp {
+        font-size: 6vw;
+    }
+    @include sp-xs {
+        font-size: 8vw;
+    }
+}
+
+.hero-paragraph {
+    font-size: 13px;
+    line-height: 2rem;
+    @include sp {
+        line-height: 1.5rem;
+    }
+}
+
+.hero-imagebox {
+    width: 48%;
+    margin-bottom: 25px;
+    img {
+        width: 100%;
+    }
+}
+
+.top-feature {
+    padding: var(--padding-md) 0;
+    .three-column-flexbox{
+        padding-bottom: var(--padding-sm);
+    }
+}
+
+.service-contentbox {
+    width: 60%;
+}
+
+.service-imagebox {
+    width: 30%;
+    position: relative;
+    @include pc-s {
+        width: 35%;
+    }
+}
+
+.top-services {
+    position: relative;
+    padding: var(--padding-md) 0;
+    p {
+        padding-bottom: var(--padding-sm);
+    }
+    .content-max-width {
+        position: relative;
+    }
+    .three-column-flexbox {
+        margin-bottom: var(--padding-sm);
+    }
+    .service-contentbox,.service-imagebox {
+        z-index: 1;
+    }
+    img {
+        width: 100%;
+        @include sp {
+            width: 80%;
+            margin-bottom: 60px;
+        }
+    }
+    @include sp {
+        .responsive-flexbox {
+            flex-direction: column-reverse;
+        }
+    }
+}
+
+.reverse-layout {
+    .responsive-flexbox {
+        flex-direction: row-reverse;
+        @include sp {
+            flex-direction: column-reverse;
+        }
+    }
+}
+
+.background-right-ractangle::before {
+    content: '';
+    background-color: $brand-color-primary;
+    position: absolute;
+    height: 300px;
+    top: calc(50% - 150px);
+    right: -200px;
+    left: 20%;
+    clip-path: polygon(15% 0, 100% 0, 100% 100%, 0% 100%);
+    z-index: -1;
+    @include sp {
+        height: 100%;
+        top: -30px;
+    }
+}
+
+.background-left-ractangle::before {
+    content: '';
+    background-color: $brand-color-primary;
+    position: absolute;
+    height: 300px;
+    top: calc(50% - 150px);
+    left: -200px;
+    right: 20%;
+    clip-path: polygon(0 0, 85% 0, 100% 100%, 0% 100%);
+    z-index: -1;
+    @include sp {
+        height: 100%;
+        top: -30px;
+    }
+}

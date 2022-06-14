@@ -1,0 +1,26 @@
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="200" height="200" fill="white"/>
+<rect x="39" y="72" width="22" height="7" fill="#71B82B"/>
+<rect x="39" y="88" width="22" height="8" fill="#71B82B"/>
+<rect x="39" y="104" width="22" height="8" fill="#71B82B"/>
+<rect x="39" y="120" width="22" height="7" fill="#71B82B"/>
+<rect x="139" y="72" width="22" height="7" fill="#71B82B"/>
+<rect x="139" y="88" width="22" height="8" fill="#71B82B"/>
+<rect x="139" y="104" width="22" height="8" fill="#71B82B"/>
+<rect x="139" y="120" width="22" height="7" fill="#71B82B"/>
+<path d="M170 60H139V71.5H161V79.5H139V87.5H161V96H139V103.5H161V112H139V120H161V127.5H139V156.5H170V60Z" stroke="#151515" stroke-width="3"/>
+<path d="M30 60H61V71.5H39V79.5H61V87.5H39V96H61V103.5H39V112H61V120H39V127.5H61V156.5H30V60Z" stroke="#151515" stroke-width="3"/>
+<path d="M61 43V156.5H90.5V135.5H110V156.5H139.5V43H61Z" fill="white" stroke="#151515" stroke-width="3"/>
+<rect x="114.5" y="55.5" width="9" height="8" fill="#71B82B" stroke="#151515" stroke-width="3"/>
+<rect x="95.5" y="55.5" width="9" height="8" fill="#71B82B" stroke="#151515" stroke-width="3"/>
+<rect x="76.5" y="55.5" width="9" height="8" fill="#71B82B" stroke="#151515" stroke-width="3"/>
+<rect x="114.5" y="74.5" width="9" height="8" fill="#71B82B" stroke="#151515" stroke-width="3"/>
+<rect x="95.5" y="74.5" width="9" height="8" fill="#71B82B" stroke="#151515" stroke-width="3"/>
+<rect x="76.5" y="74.5" width="9" height="8" fill="#71B82B" stroke="#151515" stroke-width="3"/>
+<rect x="114.5" y="93.5" width="9" height="8" fill="#71B82B" stroke="#151515" stroke-width="3"/>
+<rect x="95.5" y="93.5" width="9" height="8" fill="#71B82B" stroke="#151515" stroke-width="3"/>
+<rect x="76.5" y="93.5" width="9" height="8" fill="#71B82B" stroke="#151515" stroke-width="3"/>
+<rect x="114.5" y="112.5" width="9" height="8" fill="#71B82B" stroke="#151515" stroke-width="3"/>
+<rect x="95.5" y="112.5" width="9" height="8" fill="#71B82B" stroke="#151515" stroke-width="3"/>
+<rect x="76.5" y="112.5" width="9" height="8" fill="#71B82B" stroke="#151515" stroke-width="3"/>
+</svg>

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>お問いわせ / HOUND</title>
+    <!-- Style sheet -->
+    <link rel="stylesheet" href="styles/style.css">
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kiwi+Maru&family=Montserrat:wght@400;500;700&family=Noto+Sans+JP:wght@400;500;700&family=Zen+Maru+Gothic:wght@400;500&display=swap"
+        rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="main">
+        <!-- Desktop Menu -->
+        <nav class="gnav content-max-width">
+            <a href="index.html"><img src="images/logo_black.png" alt="株式会社HOUND/Home"></a>
+            <a class="mobile-menu button-link">
+                <span class="menu__line menu__line--top"></span>
+                <span class="menu__line menu__line--center"></span>
+                <span class="menu__line menu__line--bottom"></span>
+            </a>
+            <ul class="gnav-menu flexbox">
+                <li><a href="about.html">私たちについて</a></li>
+                <li><a href="movie.html">映像事業</a></li>
+                <li><a href="event.html">イベント事業</a></li>
+                <li><a href="web/marketing.html">Web/マーケティング事業</a></li>
+                <li><a href="recruit.html">採用情報</a></li>
+                <li><a class="button-link button-secondary" href="contact.html">お問い合わせ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Title space -->
+    <section class="subpage-title-space">
+        <div class="content-max-width">
+            <h1 class="jp">お問い合わせ</h1>
+            <h1 class="en">CONTACT</h1>
+        </div>
+    </section>
+
+    <!-- Main -->
+    <!-- Top -->
+    <section class="subpage-top content-max-width">
+        <p>制作に関するお見積りやご依頼はもちろん、現状何をすればいいかもわからないなどのご相談も承っております。どうぞお気軽にご連絡ください！</p>
+    </section>
+
+    <!-- お電話でのお問い合わせ -->
+    <section class="subpage-section content-max-width contact-page-phone">
+        <h3 class="jp">お電話でのお問い合わせ</h3>
+        <div class="flexbox contact-page-phone-box">
+            <div class="flexbox">
+                <img src="images/phone.svg" alt="">
+                <p class="phone-text">03-6709-4665</p>
+            </div>
+            <p>受付時間：平日 9:00〜19:00</p>
+        </div>
+    </section>
+
+    <!-- メールでのお問い合わせ -->
+    <section class="subpage-section content-max-width contact-page-mail">
+        <h3 class="jp">メールでのお問い合わせ</h3>
+        <form class="contact-form" action="#" method="post">
+            <div class="responsive-flexbox two-column-flexbox">
+                <div class="contact-form-item">
+                    <div class="flexbox">
+                        <label class="label" for="company-name" name="company-name">会社名/団体名</label>
+                         <div class="card-tag">必須</div>
+                    </div>
+                    <input class="contact-form-input" id="company-name" type="text" placeholder="例：株式会社HOUND / 個人の方は「個人」とご記入ください">
+                </div>
+                <div class="contact-form-item">
+                    <div class="flexbox">
+                        <label class="label" for="name">氏名</label>
+                        <div class="card-tag">必須</div>
+                    </div>
+                    <input class="contact-form-input" id="name" type="name" name="name" placeholder="例：山田 太郎">
+                </div>
+            </div>
+            <div class="responsive-flexbox two-column-flexbox">
+                <div class="contact-form-item">
+                    <div class="flexbox">
+                        <label class="label" for="tel" name="tel">電話番号</label>
+                        <div class="card-tag">必須</div>
+                    </div>
+                    <input class="contact-form-input" id="tel" type="tel" placeholder="例：03-6709-4665">
+                </div>
+                <div class="contact-form-item">
+                    <div class="flexbox">
+                        <label class="label" for="email">メール</label>
+                        <div class="card-tag">必須</div>
+                    </div>
+                    <input class="contact-form-input" id="email" type="email" name="email" placeholder="例：yamada@hound.com">
+                </div>
+            </div>
+            <div class="contact-form-item">
+                <div class="flexbox">
+                    <p class="label">お問い合わせ種類</p>
+                    <div class="card-tag">必須</div>
+                </div>
+                <div class="radio-group">
+                    <label class="contact-form-service"><input type="checkbox" name="service">映像制作について</label>
+                    <label class="contact-form-service"><input type="checkbox" name="service">イベント製作について</label>
+                    <label class="contact-form-service"><input type="checkbox" name="service">Web/マーケティングについて</label>
+                    <label class="contact-form-service"><input type="checkbox" name="service">採用について</label>
+                    <label class="contact-form-service"><input type="checkbox" name="service">その他</label>
+                </div>
+            </div>
+            <div class="contact-form-item">
+                <div class="flexbox">
+                    <label class="label" for="message">お問い合わせ内容</label>
+                    <div class="card-tag">必須</div>
+                </div>
+                <textarea class="contact-form-input" rows="5" id="message" name="comment"></textarea>
+            </div>
+            <div class="contact-form-item no-label">
+                <input class="button-primary-secondarycolor" type="submit" value="送信する">
+            </div>
+        </form>
+    </section>
+
+
+
+    <!-- contact -->
+    <section class="footer-contact">
+        <div class="content-max-width responsive-flexbox">
+            <div class="contact-text-box">
+                <h3 class="jp">お問い合わせ</h3>
+                <h1 class="en">CONTACT</h3>
+                    <p>制作に関するお見積り（無料)・ご依頼はもちろん、現状何をすればいいかもわからないなどのご相談も承っております。</p>
+            </div>
+            <div class="contact-info-box">
+                <div class="contact-mail">
+                    <h4 class="jp">メールでのお問い合わせ</h4>
+                    <a class="button-secondary" href="#"><img src="images/mail.svg" alt="">フォームはこちら</a>
+                </div>
+                <div class="contact-phone">
+                    <h4 class="jp">電話でのお問い合わせ</h4>
+                    <div class="flexbox">
+                        <img src="images/phone.svg" alt="">
+                        <p class="phone-text">03-6709-4665</p>
+                    </div>
+                    <p>受付時間：平日 9:00〜19:00</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="content-max-width">
+            <div class="responsive-flexbox">
+                <div class="footer-info">
+                    <div class="flexbox">
+                        <img src="images/logo_white.svg" alt="株式会社HOUNDロゴ">
+                        <div>
+                            <h4 class="jp">株式会社HOUND</h4>
+                            <p>〒170-0011 東京都豊島区池袋本町２丁目５−３ カルドアンビエンテ 3F<br>
+                                Tel: 03-6709-4665</p>
+                            <a class="text-link" href="privacy-policy.html">プライバシーポリシー</a>
+                        </div>
+                    </div>
+                </div>
+                <a href="#"><img class="goto-top" src="images/arrow-top.svg" alt="TOPへ"></a>
+            </div>
+            <p class="copyright responsive-flexbox">Copyright © 2021 HOUND Inc. All rights reserved.</p>
+        </div>
+
+    </footer>
+
+
+</body>
+
+<!-- Java script and jQuery-->
+<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous"></script>
+<script src="js/index.js"></script>
+
+</html>

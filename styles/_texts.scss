@@ -1,4 +1,4 @@
-.h1-jp {
+h1.jp {
     font-family: $h-jp-font;
     font-size: 25px;
     font-weight: 400;
@@ -7,16 +7,20 @@
     }
 }
 
-.h1-en {
+h1.en {
     font-family: $h-en-font;
     font-size: 80px;
     font-weight: 500;
+    text-transform: uppercase;
     @include tab{
         font-size: 50px;
     }
+    @include sp-xs{
+        font-size: 40px;
+    }
 }
 
-.h2-jp {
+h2.jp {
     font-family: $h-jp-font;
     font-size: 50px;
     font-weight: 500;
@@ -25,7 +29,7 @@
     }
 }
 
-.h3-jp {
+h3.jp {
     font-family: $h-jp-font;
     font-size: 25px;
     font-weight: 400;
@@ -34,26 +38,32 @@
     }
 }
 
-.h3-en {
+h3.en {
     font-family: $h-en-font;
     font-size: 40px;
     font-weight: 500;
-    padding-bottom: 5px;
+    padding-bottom: 50px;
+    text-transform: uppercase;
     @include tab{
         font-size: 30px;
     }
 }
 
-.h4-jp {
+h3.en-top {
+    padding-bottom: 5px;
+}
+
+h4.jp {
     font-family: $h-jp-font;
     font-size: 20px;
     font-weight: 700;
+    margin-bottom: var(--padding-xs);
     @include tab{
         font-size: 17px;
     }
 }
 
-.h5-jp {
+h5.jp {
     font-family: $h-jp-font;
     font-size: 16px;
     font-weight: 700;
@@ -62,16 +72,46 @@
     }
 }
 
+.heading-color {
+    h1,h2,h3,h4,h5,h6{
+        color: $brand-color-secondary;
+    }
+}
+
 .h-line {
     border: 5px solid $brand-color-primary;
     width: 80px;
     margin: auto;
-    margin-bottom: $padding-sm-desktop;
+    margin-bottom: var(--padding-sm);
+}
+
+.h-line-long {
+    border: 3px solid $brand-color-tertiary;
+    margin: 5px 0 var(--padding-sm);
 }
 
 .text-strong {
-    font-size: 40px;
+    font-size: 35px;
+    line-height: 1.5;
     @include tab{
         font-size: 20px;
     }
+}
+
+.text-bold {
+    font-weight: 500;
+}
+
+.highlighted-text {
+    background: linear-gradient(transparent 60%, $brand-color-primary 0%);
+}
+
+.text-link {
+    color: $text-color-reverse;
+    text-decoration: underline;
+}
+
+.text-link-black {
+    color: $text-color;
+    text-decoration: underline;
 }
