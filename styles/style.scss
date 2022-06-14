@@ -70,7 +70,7 @@ button, .button-link {
     align-items: stretch;
     flex-wrap: wrap;
     column-gap: calc(var(--padding-xs) - 2px);
-    // row-gap: var(--padding-xs);
+    row-gap: var(--padding-xs);
     & > * {
         flex-basis: calc(50% - var(--padding-xs) / 2 - 2px); 
     }
