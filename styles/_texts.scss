@@ -115,3 +115,7 @@ h5.jp {
     color: $text-color;
     text-decoration: underline;
 }
+
+.line-break {
+    word-break: keep-all;
+}

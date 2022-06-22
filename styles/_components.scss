@@ -15,6 +15,23 @@
     }
 }
 
+.button-primary-small {
+    @include button-common;
+    border: none;
+    color: $text-color;
+    padding: 13px;
+    background: $brand-color-primary;
+    font-weight: 700;
+    background-image: url(../images/arrow-right-black.svg);
+    background-repeat: no-repeat;
+    background-position: right 24px center;
+    &:hover {
+        background-color: $brand-color-tertiary;
+        background-image: url(../images/arrow-right-white.svg);
+        color: $text-color-reverse;
+    }
+}
+
 .button-primary-secondarycolor {
     @include button-common;
     border: none;
@@ -129,16 +146,6 @@
     p {
         padding: 30px 0 !important;
     }
-}
-
-.text-link {
-    color: $text-color-reverse;
-    text-decoration: underline;
-}
-
-.text-link-black {
-    color: $text-color;
-    text-decoration: underline;
 }
 
 .youtube {

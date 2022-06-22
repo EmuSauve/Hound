@@ -149,6 +149,10 @@ h5.jp {
   text-decoration: underline;
 }
 
+.line-break {
+  word-break: keep-all;
+}
+
 .button-primary {
   border-radius: 100px;
   text-align: center;
@@ -174,6 +178,36 @@ h5.jp {
   }
 }
 .button-primary:hover {
+  background-color: #151515;
+  background-image: url(../images/arrow-right-white.svg);
+  color: #FFFFFF;
+}
+
+.button-primary-small {
+  border-radius: 100px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  transition: 0.3s;
+  line-height: 1;
+  border: none;
+  color: #151515;
+  padding: 13px;
+  background: #FDE332;
+  font-weight: 700;
+  background-image: url(../images/arrow-right-black.svg);
+  background-repeat: no-repeat;
+  background-position: right 24px center;
+}
+@media screen and (max-width: 769px) {
+  .button-primary-small {
+    width: 100%;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+.button-primary-small:hover {
   background-color: #151515;
   background-image: url(../images/arrow-right-white.svg);
   color: #FFFFFF;
@@ -346,16 +380,6 @@ h5.jp {
 }
 .card-outline p {
   padding: 30px 0 !important;
-}
-
-.text-link {
-  color: #FFFFFF;
-  text-decoration: underline;
-}
-
-.text-link-black {
-  color: #151515;
-  text-decoration: underline;
 }
 
 .youtube {
