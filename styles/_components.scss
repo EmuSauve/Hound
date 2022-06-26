@@ -51,8 +51,8 @@
 .button-secondary {
     @include button-common;
     border: none;
-    color: white;
-    padding: 13px 36px;
+    color: $text-color-reverse;
+    padding: 13px 20px;
     background: $brand-color-secondary;
     font-weight: 500;
     display: flex;
@@ -60,7 +60,28 @@
     justify-content: center;
 
     &:hover {
-        background: $brand-color-tertiary;
+        background: #50841C;
+    }
+
+    img {
+        margin-right: 10px;
+        padding-top: 2px;
+    }
+}
+
+.button-secondary-thirdlycolor {
+    @include button-common;
+    border: none;
+    color: $text-color-reverse;
+    padding: 13px 20px;
+    background: $brand-color-tertiary;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+        background: #3B3B3B;
     }
 
     img {

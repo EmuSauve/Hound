@@ -4,18 +4,19 @@ header.main {
     ul {
         list-style-type: none;
     }
-    img {
-        width: 170px;
-        padding-top: 5px;
-        @include pc-s {
-            width: 140px;
+    .header-logo {
+        width: 13vw;
+        padding-top: 10px;
+        @include pc-xl{
+            width: 200px;
+        }
+        @include tab{
+            padding-top: 0px;
+            width: 150px;
         }
         @include sp {
             width: 100px;
         }
-    }
-    .button-secondary {
-        font-size: 14px;
     }
 
     @include tab {
@@ -50,17 +51,20 @@ header.main {
 }
 
 .gnav-menu {
-    width: 740px;
     li {
         display: contents;
     }
     a {
-        font-size: 14px;
+        font-size: 0.97vw;
+        margin-left: 1.2vw;
+        @include pc-xl {
+            font-size: 14px;
+            margin-left: 20px;
+        }
         @include tab {
             margin: 25px 0;
             font-size: 16px !important;
         }
-
     }
     a:not(.button-link) {
         color: $text-color;
@@ -82,18 +86,21 @@ header.main {
         }
     }
     .button-link {
+        font-size: 0.97vw;
+        @include pc-xl {
+            font-size: 14px;
+        }
         @include tab {
             width: 200px !important;
         }
-    }
-    @include pc-s {
-        width: 630px;
-        a {
-            font-size: 13px;
-        }
-        .button-link {
-            font-size: 13px;
-            padding: 10px 20px;
+        img {
+            width: 1.5vw;
+            @include pc-xl {
+                width: 20px;
+            }
+            @include tab {
+                width: 20px;
+            }
         }
     }
     @include tab {
