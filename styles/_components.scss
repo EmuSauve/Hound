@@ -169,6 +169,25 @@
     }
 }
 
+.card-price {
+    .price-text {
+        margin-bottom: 0;
+    }
+    hr {
+        border: 3px solid $brand-color-tertiary;
+        margin-bottom: var(--padding-xs);
+    }
+    p {
+        margin-bottom: var(--padding-sm);
+    }
+    ul {
+        // list-style-type: none;
+      }
+    li {
+        margin-left: 25px;
+    }
+}
+
 .youtube {
     background-color: gray;
     height: 150px;

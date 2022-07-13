@@ -131,6 +131,20 @@ h5.jp {
   }
 }
 
+.text-strong-xl {
+  font-size: 80px;
+}
+@media screen and (max-width: 1200px) {
+  .text-strong-xl {
+    font-size: 50px;
+  }
+}
+@media screen and (max-width: 769px) {
+  .text-strong-xl {
+    font-size: 60px;
+  }
+}
+
 .text-bold {
   font-weight: 500;
 }
@@ -412,6 +426,20 @@ h5.jp {
 }
 .card-outline p {
   padding: 30px 0 !important;
+}
+
+.card-price .price-text {
+  margin-bottom: 0;
+}
+.card-price hr {
+  border: 3px solid #151515;
+  margin-bottom: var(--padding-xs);
+}
+.card-price p {
+  margin-bottom: var(--padding-sm);
+}
+.card-price li {
+  margin-left: 25px;
 }
 
 .youtube {
@@ -813,6 +841,14 @@ header.main .header-logo {
   text-align: center;
   padding: var(--padding-xs);
 }
+.members .card-transparent {
+  padding: var(--padding-xs);
+}
+@media screen and (max-width: 1200px) {
+  .members .card-transparent {
+    padding: 0;
+  }
+}
 .members img {
   margin-bottom: var(--padding-xs);
   width: 100%;
@@ -1119,12 +1155,6 @@ button, .button-link {
 .three-column-flexbox-responsive {
   justify-content: flex-start;
 }
-@media screen and (max-width: 992px) {
-  .three-column-flexbox-responsive > * {
-    flex-basis: calc(50% - var(--padding-xs) / 2 - 2px);
-  }
-}
-
 .four-column-flexbox {
   align-items: stretch;
   flex-wrap: wrap;

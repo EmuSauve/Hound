@@ -1,0 +1,17 @@
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="200" height="200" fill="white"/>
+<rect x="46.4531" y="68.5" width="42.0748" height="16.5607" rx="1.5" stroke="#151515" stroke-width="3"/>
+<path d="M56.8599 67.4252V85.7103" stroke="#151515" stroke-width="3"/>
+<path d="M67.916 67.4252V85.7102" stroke="#151515" stroke-width="3"/>
+<path d="M78.9722 67.4252V85.7102" stroke="#151515" stroke-width="3"/>
+<rect x="40.5" y="107.5" width="54" height="24" fill="#71B82B" stroke="#151515" stroke-width="3"/>
+<path d="M50.9067 90.8131H47.8506C43.4323 90.8131 39.8506 94.3948 39.8506 98.8131V150C39.8506 154.418 43.4323 158 47.8506 158H87.131C91.5492 158 95.131 154.418 95.131 150V98.8131C95.131 94.3948 91.5492 90.8131 87.131 90.8131H84.5001" stroke="#151515" stroke-width="3"/>
+<path d="M50.4814 84.8598L50.4814 92.0888" stroke="#151515" stroke-width="3"/>
+<path d="M84.9253 84.8598V92.0888" stroke="#151515" stroke-width="3"/>
+<path d="M118 51H152.5" stroke="#151515" stroke-width="3"/>
+<path d="M111 52.7441L118 138.5H153L159.5 52.7441C159.5 52.7441 161.5 43.5 161.5 39H109C109 43.5 111 52.7441 111 52.7441Z" stroke="#151515" stroke-width="3"/>
+<rect x="120.5" y="65.5" width="29" height="19" fill="#71B82B" stroke="#151515" stroke-width="3"/>
+<rect x="117.5" y="138.5" width="36" height="20" rx="1.5" stroke="#151515" stroke-width="3"/>
+<path d="M118 151H153" stroke="#151515" stroke-width="3"/>
+<path d="M139 150C139 148.343 137.433 147 135.5 147C133.567 147 132 148.343 132 150" stroke="#151515" stroke-width="3"/>
+</svg>

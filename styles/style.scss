@@ -101,9 +101,9 @@ button, .button-link {
 .three-column-flexbox-responsive{
     justify-content: flex-start;
     @include tab {
-        & > * {
-            flex-basis: calc(50% - var(--padding-xs) / 2 - 2px); 
-        }
+        // & > * {
+        //     flex-basis: calc(50% - var(--padding-xs) / 2 - 2px); 
+        // }
     }
 }
 

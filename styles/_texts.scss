@@ -98,6 +98,16 @@ h5.jp {
     }
 }
 
+.text-strong-xl {
+    font-size: 80px;
+    @include pc-s{
+        font-size: 50px;
+    }
+    @include sp{
+        font-size: 60px;
+    }
+}
+
 .text-bold {
     font-weight: 500;
 }

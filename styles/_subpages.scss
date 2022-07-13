@@ -49,6 +49,12 @@
 .members {
     text-align: center;
     padding: var(--padding-xs);
+    .card-transparent {
+        padding: var(--padding-xs);
+        @include pc-s {
+            padding: 0;
+        }
+    }
     img {
         margin-bottom: var(--padding-xs);
         width: 100%;
