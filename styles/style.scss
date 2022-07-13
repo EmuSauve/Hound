@@ -88,6 +88,18 @@ button, .button-link {
     }
 }
 
+.two-column-uneven-flexbox2 {
+    align-items: flex-start;
+    column-gap: calc(var(--padding-xs) - 2px);
+    row-gap: var(--padding-xs);
+    & > *:first-child {
+        width: 10%;
+    }
+    & > *:nth-child(2) {
+        width: 85%;
+    }
+}
+
 .three-column-flexbox{
     align-items: stretch;
     flex-wrap: wrap;
@@ -101,39 +113,39 @@ button, .button-link {
 .three-column-flexbox-responsive{
     justify-content: flex-start;
     @include tab {
-        // & > * {
-        //     flex-basis: calc(50% - var(--padding-xs) / 2 - 2px); 
-        // }
+        & > * {
+            flex-basis: calc(50% - var(--padding-xs) / 2 - 2px); 
+        }
     }
 }
 
-.four-column-flexbox{
-    align-items: stretch;
-    flex-wrap: wrap;
-    column-gap: calc(var(--padding-xs) - 2px);
-    row-gap: var(--padding-xs);
-    & > * {
-        flex-basis: calc(23% - var(--padding-xs) / 2 - 2px); 
-    }
-    @include tab {
-        justify-content: flex-start;
-        & > * {
-            flex-basis: calc(33% - var(--padding-xs) / 2 - 2px); 
-        }
-    }
-    @include sp {
-        flex-direction: unset;
-        & > * {
-            flex-basis: calc(50% - var(--padding-xs) / 2 - 2px); 
-            text-align: center;
-        }
-    }
-    @media screen and (max-width: 500px) {
-        & > * {
-            flex-basis: 100%; 
-        }
-    }
-}
+// .four-column-flexbox{
+//     align-items: stretch;
+//     flex-wrap: wrap;
+//     column-gap: calc(var(--padding-xs) - 2px);
+//     row-gap: var(--padding-xs);
+//     & > * {
+//         flex-basis: calc(23% - var(--padding-xs) / 2 - 2px); 
+//     }
+//     @include tab {
+//         justify-content: flex-start;
+//         & > * {
+//             flex-basis: calc(33% - var(--padding-xs) / 2 - 2px); 
+//         }
+//     }
+//     @include sp {
+//         flex-direction: unset;
+//         & > * {
+//             flex-basis: calc(50% - var(--padding-xs) / 2 - 2px); 
+//             text-align: center;
+//         }
+//     }
+//     @media screen and (max-width: 500px) {
+//         & > * {
+//             flex-basis: 100%; 
+//         }
+//     }
+// }
 
 .align-center {
     text-align: center;

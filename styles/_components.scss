@@ -172,15 +172,16 @@
 .card-price {
     .price-text {
         margin-bottom: 0;
+        .text-strong-xl {
+            color: $brand-color-secondary;
+        }
     }
     hr {
         border: 3px solid $brand-color-tertiary;
         margin-bottom: var(--padding-xs);
     }
-    p {
-        margin-bottom: var(--padding-sm);
-    }
     ul {
+        margin-top: var(--padding-sm);
         // list-style-type: none;
       }
     li {
@@ -189,9 +190,16 @@
 }
 
 .youtube {
-    background-color: gray;
-    height: 150px;
     margin-bottom: var(--padding-xs);
+    iframe {
+        width: 100%;
+    }
+}
+
+.empty-box {
+    height: 150px;
+    width: 100%;
+    background-color: black;
 }
 
 .card-transparent {

@@ -431,21 +431,31 @@ h5.jp {
 .card-price .price-text {
   margin-bottom: 0;
 }
+.card-price .price-text .text-strong-xl {
+  color: #71B82B;
+}
 .card-price hr {
   border: 3px solid #151515;
   margin-bottom: var(--padding-xs);
 }
-.card-price p {
-  margin-bottom: var(--padding-sm);
+.card-price ul {
+  margin-top: var(--padding-sm);
 }
 .card-price li {
   margin-left: 25px;
 }
 
 .youtube {
-  background-color: gray;
-  height: 150px;
   margin-bottom: var(--padding-xs);
+}
+.youtube iframe {
+  width: 100%;
+}
+
+.empty-box {
+  height: 150px;
+  width: 100%;
+  background-color: black;
 }
 
 .card-transparent {
@@ -837,6 +847,31 @@ header.main .header-logo {
   margin-right: 20px;
 }
 
+.flow .flow-number-title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.flow .flow-number-title h4 {
+  margin-bottom: 0;
+}
+.flow .flow-number-title img {
+  width: 80px;
+  margin-right: 20px;
+}
+.flow .flow-arrow {
+  margin: 40px 0;
+}
+.flow .flow-arrow img {
+  width: 20px;
+  margin-left: 30px;
+}
+@media screen and (max-width: 992px) {
+  .flow .flow-arrow {
+    text-align: center;
+  }
+}
+
 .members {
   text-align: center;
   padding: var(--padding-xs);
@@ -1142,6 +1177,18 @@ button, .button-link {
   width: 65%;
 }
 
+.two-column-uneven-flexbox2 {
+  align-items: flex-start;
+  column-gap: calc(var(--padding-xs) - 2px);
+  row-gap: var(--padding-xs);
+}
+.two-column-uneven-flexbox2 > *:first-child {
+  width: 10%;
+}
+.two-column-uneven-flexbox2 > *:nth-child(2) {
+  width: 85%;
+}
+
 .three-column-flexbox {
   align-items: stretch;
   flex-wrap: wrap;
@@ -1155,35 +1202,9 @@ button, .button-link {
 .three-column-flexbox-responsive {
   justify-content: flex-start;
 }
-.four-column-flexbox {
-  align-items: stretch;
-  flex-wrap: wrap;
-  column-gap: calc(var(--padding-xs) - 2px);
-  row-gap: var(--padding-xs);
-}
-.four-column-flexbox > * {
-  flex-basis: calc(23% - var(--padding-xs) / 2 - 2px);
-}
 @media screen and (max-width: 992px) {
-  .four-column-flexbox {
-    justify-content: flex-start;
-  }
-  .four-column-flexbox > * {
-    flex-basis: calc(33% - var(--padding-xs) / 2 - 2px);
-  }
-}
-@media screen and (max-width: 769px) {
-  .four-column-flexbox {
-    flex-direction: unset;
-  }
-  .four-column-flexbox > * {
+  .three-column-flexbox-responsive > * {
     flex-basis: calc(50% - var(--padding-xs) / 2 - 2px);
-    text-align: center;
-  }
-}
-@media screen and (max-width: 500px) {
-  .four-column-flexbox > * {
-    flex-basis: 100%;
   }
 }
 
