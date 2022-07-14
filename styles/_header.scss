@@ -55,12 +55,8 @@ header.main {
         display: contents;
     }
     a {
-        font-size: 0.97vw;
-        margin-left: 1.2vw;
-        @include pc-xl {
-            font-size: 14px;
-            margin-left: 20px;
-        }
+        font-size: min(1.2vw,16px);
+        margin-left: min(1.6vw,22px);
         @include tab {
             margin: 25px 0;
             font-size: 16px !important;
@@ -86,18 +82,12 @@ header.main {
         }
     }
     .button-link {
-        font-size: 0.97vw;
-        @include pc-xl {
-            font-size: 14px;
-        }
+        font-size: min(1.1vw,16px);
         @include tab {
             width: 200px !important;
         }
         img {
-            width: 1.5vw;
-            @include pc-xl {
-                width: 20px;
-            }
+            width: min(1.5vw,20px);
             @include tab {
                 width: 20px;
             }

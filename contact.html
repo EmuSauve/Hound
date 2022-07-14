@@ -36,8 +36,8 @@
                 <li><a href="event.html">イベント事業</a></li>
                 <li><a href="web-marketing.html">Web/マーケティング事業</a></li>
                 <li><a href="recruit.html">採用情報</a></li>
-                <li><a href="#">ブログ</a></li>
-                <li><a class="button-link button-secondary-thirdlycolor" href="request.html"><img src="images/send.svg" alt="">資料請求</a></li>
+                <!-- <li><a href="#">ブログ</a></li> -->
+                <!-- <li><a class="button-link button-secondary-thirdlycolor" href="request.html"><img src="images/send.svg" alt="">資料請求</a></li> -->
                 <li><a class="button-link button-secondary" href="contact.html"><img src="images/mail.svg" alt="">お問い合わせ</a></li>
             </ul>
         </nav>
@@ -72,7 +72,7 @@
     <!-- メールでのお問い合わせ -->
     <section class="subpage-section content-max-width contact-page-mail">
         <h3 class="jp">メールでのお問い合わせ</h3>
-        <form class="contact-form" action="#" method="post">
+        <form class="contact-form" action="mailto:#" method="post">
             <div class="responsive-flexbox two-column-flexbox">
                 <div class="contact-form-item">
                     <div class="flexbox">
@@ -124,6 +124,20 @@
                     <div class="card-tag">必須</div>
                 </div>
                 <textarea class="contact-form-input" rows="5" id="message" name="comment"></textarea>
+            </div>
+            <div class="contact-form-item">
+                <div class="flexbox">
+                    <p class="label">ご希望の資料(複数選択可能)</p>
+                </div>
+                <div class="radio-group">
+                    <label class="contact-form-document"><input type="checkbox" name="document">会社紹介資料</label>
+                    <label class="contact-form-document"><input type="checkbox" name="document">薬機法特化型動画</label>
+                    <label class="contact-form-document"><input type="checkbox" name="document">チャットボット連動型動画</label>
+                    <label class="contact-form-document"><input type="checkbox" name="document">議員向け動画</label>
+                    <label class="contact-form-document"><input type="checkbox" name="document">TikTok特化型動画</label>
+                    <label class="contact-form-document"><input type="checkbox" name="document">TikTokアカウント運用</label>
+                    <label class="contact-form-document"><input type="checkbox" name="document">広告運用</label>
+                </div>
             </div>
             <div class="contact-form-item no-label">
                 <input class="button-primary-secondarycolor" type="submit" value="送信する">

@@ -281,7 +281,7 @@ h5.jp {
   }
 }
 .button-secondary:hover {
-  background: #50841C;
+  background: #151515;
 }
 .button-secondary img {
   margin-right: 10px;
@@ -534,14 +534,8 @@ header.main .header-logo {
   display: contents;
 }
 .gnav-menu a {
-  font-size: 0.97vw;
-  margin-left: 1.2vw;
-}
-@media screen and (min-width: 1500px) {
-  .gnav-menu a {
-    font-size: 14px;
-    margin-left: 20px;
-  }
+  font-size: min(1.2vw, 16px);
+  margin-left: min(1.6vw, 22px);
 }
 @media screen and (max-width: 992px) {
   .gnav-menu a {
@@ -569,12 +563,7 @@ header.main .header-logo {
   transform: scaleX(1);
 }
 .gnav-menu .button-link {
-  font-size: 0.97vw;
-}
-@media screen and (min-width: 1500px) {
-  .gnav-menu .button-link {
-    font-size: 14px;
-  }
+  font-size: min(1.1vw, 16px);
 }
 @media screen and (max-width: 992px) {
   .gnav-menu .button-link {
@@ -582,12 +571,7 @@ header.main .header-logo {
   }
 }
 .gnav-menu .button-link img {
-  width: 1.5vw;
-}
-@media screen and (min-width: 1500px) {
-  .gnav-menu .button-link img {
-    width: 20px;
-  }
+  width: min(1.5vw, 20px);
 }
 @media screen and (max-width: 992px) {
   .gnav-menu .button-link img {
@@ -953,7 +937,7 @@ header.main .header-logo {
   height: 20em;
   padding: 10px;
 }
-.contact-form-item .contact-form-service {
+.contact-form-item .contact-form-service, .contact-form-item .contact-form-document {
   margin-right: 20px;
 }
 
