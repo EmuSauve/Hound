@@ -196,10 +196,8 @@
     }
 }
 
-.empty-box {
-    height: 150px;
+.image-box {
     width: 100%;
-    background-color: black;
 }
 
 .card-transparent {
@@ -208,6 +206,10 @@
     iframe {
         width: 100%;
         height: 250px;
+    }
+
+    img {
+        width: 100%;
     }
 
     @include sp {
