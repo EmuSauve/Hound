@@ -182,10 +182,35 @@
     }
     ul {
         margin-top: var(--padding-sm);
-        // list-style-type: none;
+        line-height: 1.5;
       }
-    li {
-        margin-left: 25px;
+    li{
+        list-style: none;
+        position: relative;
+        padding-left: 18px;
+      }
+     
+      li:before {
+        content: "";
+        position: absolute;
+        top: .3em;
+        left: 0;
+        -webkit-transform: rotate(50deg);
+        -ms-transform: rotate(50deg);
+        transform: rotate(50deg);
+        width: 5px;
+        height: 10px;
+        border-right: 2px solid $text-color;
+        border-bottom: 2px solid $text-color;
+      }
+    @include sp{
+        .card-list-wrapper {
+            display: flex;
+            justify-content: center;
+        }
+        ul {
+            text-align: left;
+        }
     }
 }
 

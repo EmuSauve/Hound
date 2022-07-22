@@ -440,9 +440,34 @@ h5.jp {
 }
 .card-price ul {
   margin-top: var(--padding-sm);
+  line-height: 1.5;
 }
 .card-price li {
-  margin-left: 25px;
+  list-style: none;
+  position: relative;
+  padding-left: 18px;
+}
+.card-price li:before {
+  content: "";
+  position: absolute;
+  top: 0.3em;
+  left: 0;
+  -webkit-transform: rotate(50deg);
+  -ms-transform: rotate(50deg);
+  transform: rotate(50deg);
+  width: 5px;
+  height: 10px;
+  border-right: 2px solid #151515;
+  border-bottom: 2px solid #151515;
+}
+@media screen and (max-width: 769px) {
+  .card-price .card-list-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+  .card-price ul {
+    text-align: left;
+  }
 }
 
 .youtube {
@@ -811,6 +836,7 @@ header.main .header-logo {
 
 .subpage-big-section {
   margin-top: var(--padding-xl) !important;
+  padding-bottom: var(--padding-lg) !important;
 }
 
 .overview-info {
