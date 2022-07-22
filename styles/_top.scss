@@ -70,6 +70,9 @@
     p {
         padding-bottom: var(--padding-sm);
     }
+    img {
+        width: 100%;
+    }
     .content-max-width {
         position: relative;
     }
@@ -79,11 +82,12 @@
     .service-contentbox,.service-imagebox {
         z-index: 1;
     }
-    img {
-        width: 100%;
-        @include sp {
-            width: 80%;
-            margin-bottom: 60px;
+    .service-imagebox {
+        img {
+            @include sp {
+                width: 80%;
+                margin-bottom: 60px;
+            }
         }
     }
     @include sp {

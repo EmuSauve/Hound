@@ -741,6 +741,9 @@ header.main .header-logo {
 .top-services p {
   padding-bottom: var(--padding-sm);
 }
+.top-services img {
+  width: 100%;
+}
 .top-services .content-max-width {
   position: relative;
 }
@@ -750,11 +753,8 @@ header.main .header-logo {
 .top-services .service-contentbox, .top-services .service-imagebox {
   z-index: 1;
 }
-.top-services img {
-  width: 100%;
-}
 @media screen and (max-width: 769px) {
-  .top-services img {
+  .top-services .service-imagebox img {
     width: 80%;
     margin-bottom: 60px;
   }
