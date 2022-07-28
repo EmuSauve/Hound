@@ -61,6 +61,12 @@ h4.jp {
     @include tab{
         font-size: 17px;
     }
+    .h4-small{
+        font-size: 16px;
+        @include sp{
+            font-size: 15px;
+        }
+    }
 }
 
 h5.jp {

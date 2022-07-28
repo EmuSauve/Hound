@@ -46,6 +46,18 @@
     }
 }
 
+.subpage-section-contact {
+    margin-top: var(--padding-sm);
+    text-align: center;
+    a {
+        width: 40%;
+        margin: 0 auto;
+        @include sp{
+            width: 100%;
+        }
+    }
+}
+
 //映像制作・イベント制作
 .flow{
     .flow-number-title{

@@ -93,6 +93,14 @@ h4.jp {
     font-size: 17px;
   }
 }
+h4.jp .h4-small {
+  font-size: 16px;
+}
+@media screen and (max-width: 769px) {
+  h4.jp .h4-small {
+    font-size: 15px;
+  }
+}
 
 h5.jp {
   font-family: "Noto Sans JP", sans-serif;
@@ -856,6 +864,20 @@ header.main .header-logo {
   width: 15%;
   min-width: 70px;
   margin-right: 20px;
+}
+
+.subpage-section-contact {
+  margin-top: var(--padding-sm);
+  text-align: center;
+}
+.subpage-section-contact a {
+  width: 40%;
+  margin: 0 auto;
+}
+@media screen and (max-width: 769px) {
+  .subpage-section-contact a {
+    width: 100%;
+  }
 }
 
 .flow .flow-number-title {
