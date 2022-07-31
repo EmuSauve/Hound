@@ -170,14 +170,15 @@
 }
 
 .card-price {
+    h4{
+        color: $brand-color-secondary;
+    }
     .price-text {
         margin-bottom: 0;
-        .text-strong-xl {
-            color: $brand-color-secondary;
-        }
+        color: $text-color;
     }
     hr {
-        border: 3px solid $brand-color-tertiary;
+        border: 3px solid $brand-color-secondary;
         margin-bottom: var(--padding-xs);
     }
     ul {

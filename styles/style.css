@@ -436,14 +436,15 @@ h5.jp {
   padding: 30px 0 !important;
 }
 
-.card-price .price-text {
-  margin-bottom: 0;
-}
-.card-price .price-text .text-strong-xl {
+.card-price h4 {
   color: #71B82B;
 }
+.card-price .price-text {
+  margin-bottom: 0;
+  color: #151515;
+}
 .card-price hr {
-  border: 3px solid #151515;
+  border: 3px solid #71B82B;
   margin-bottom: var(--padding-xs);
 }
 .card-price ul {
