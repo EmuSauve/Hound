@@ -789,7 +789,7 @@ header.main .header-logo {
   position: absolute;
   height: 300px;
   top: calc(50% - 150px);
-  right: -200px;
+  right: -20%;
   left: 20%;
   clip-path: polygon(15% 0, 100% 0, 100% 100%, 0% 100%);
   z-index: -1;
@@ -798,6 +798,7 @@ header.main .header-logo {
   .background-right-ractangle::before {
     height: 100%;
     top: -30px;
+    right: -10%;
   }
 }
 
@@ -807,7 +808,7 @@ header.main .header-logo {
   position: absolute;
   height: 300px;
   top: calc(50% - 150px);
-  left: -200px;
+  left: -20%;
   right: 20%;
   clip-path: polygon(0 0, 85% 0, 100% 100%, 0% 100%);
   z-index: -1;
@@ -816,6 +817,7 @@ header.main .header-logo {
   .background-left-ractangle::before {
     height: 100%;
     top: -30px;
+    left: -10%;
   }
 }
 
@@ -1115,7 +1117,6 @@ header.main .header-logo {
 
 html, body {
   height: 100%;
-  overflow-x: hidden;
 }
 
 body {
