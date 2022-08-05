@@ -12,9 +12,9 @@
 }
 
 .contact-text-box {
-    width: 40%;
+    width: 55%;
     @include pc-s {
-        width: 55%;
+        width: 50%;
     }
     @include sp {
         margin-bottom: var(--padding-sm);
@@ -25,67 +25,28 @@
 }
 
 .contact-info-box {
-    align-items: stretch;
-    display: flex;
-    @include pc-s {
-        flex-direction: column;
-    }
-}
-
-.phone-text {
-    font-size: 33px;
-    font-weight: 500;
-    padding: 0 0 5px 10px;
-}
-
-.contact-mail {
-    display: flex;
-    // justify-content: space-between;
-    flex-direction: column;
-    position: relative;
-    margin-right: 4vw;
-    @include pc-xl{
-        margin-right: 100px;
-    }
-    @include pc-s {
-        margin: 0 0 40px 0;
-        align-items: center;
-    }
+    margin-left: 20px;
     h4.jp {
-        margin-bottom: 30px;
-        @include pc-s {
-            margin-bottom: 10px;
-        }
-    }
-}
-
-.contact-mail::after {
-    position: absolute;
-    top: 0;
-    left: 100%;
-    margin: 0 2vw;
-    content: "";
-    width: 1px;
-    height: 100%;
-    background-color: #333;
-    @include pc-xl{
-        margin: 0 50px;
-    }
-    @include pc-s {
-        display: none;
+        margin-bottom: 10px;
     }
 }
 
 .contact-phone {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    @include pc-s {
-        align-items: center;
+    margin-bottom: 30px;
+    .flexbox {
+        justify-content: center;
     }
-    h4.jp {
-        @include pc-s {
-            margin-bottom: 10px;
-        }
+}
+
+.phone-text {
+    font-size: 50px;
+    font-weight: 500;
+    padding: 0 10px 5px 10px;
+    line-height: 1;
+    @include tab {
+        font-size: 4.5vw;
+    }
+    @include sp {
+        font-size: 8vw;
     }
 }

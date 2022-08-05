@@ -1014,11 +1014,11 @@ header.main .header-logo {
 }
 
 .contact-text-box {
-  width: 40%;
+  width: 55%;
 }
 @media screen and (max-width: 1200px) {
   .contact-text-box {
-    width: 55%;
+    width: 50%;
   }
 }
 @media screen and (max-width: 769px) {
@@ -1031,81 +1031,33 @@ header.main .header-logo {
 }
 
 .contact-info-box {
-  align-items: stretch;
-  display: flex;
+  margin-left: 20px;
 }
-@media screen and (max-width: 1200px) {
-  .contact-info-box {
-    flex-direction: column;
-  }
-}
-
-.phone-text {
-  font-size: 33px;
-  font-weight: 500;
-  padding: 0 0 5px 10px;
-}
-
-.contact-mail {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  margin-right: 4vw;
-}
-@media screen and (min-width: 1500px) {
-  .contact-mail {
-    margin-right: 100px;
-  }
-}
-@media screen and (max-width: 1200px) {
-  .contact-mail {
-    margin: 0 0 40px 0;
-    align-items: center;
-  }
-}
-.contact-mail h4.jp {
-  margin-bottom: 30px;
-}
-@media screen and (max-width: 1200px) {
-  .contact-mail h4.jp {
-    margin-bottom: 10px;
-  }
-}
-
-.contact-mail::after {
-  position: absolute;
-  top: 0;
-  left: 100%;
-  margin: 0 2vw;
-  content: "";
-  width: 1px;
-  height: 100%;
-  background-color: #333;
-}
-@media screen and (min-width: 1500px) {
-  .contact-mail::after {
-    margin: 0 50px;
-  }
-}
-@media screen and (max-width: 1200px) {
-  .contact-mail::after {
-    display: none;
-  }
+.contact-info-box h4.jp {
+  margin-bottom: 10px;
 }
 
 .contact-phone {
-  position: relative;
-  display: flex;
-  flex-direction: column;
+  margin-bottom: 30px;
 }
-@media screen and (max-width: 1200px) {
-  .contact-phone {
-    align-items: center;
+.contact-phone .flexbox {
+  justify-content: center;
+}
+
+.phone-text {
+  font-size: 50px;
+  font-weight: 500;
+  padding: 0 10px 5px 10px;
+  line-height: 1;
+}
+@media screen and (max-width: 992px) {
+  .phone-text {
+    font-size: 4.5vw;
   }
 }
-@media screen and (max-width: 1200px) {
-  .contact-phone h4.jp {
-    margin-bottom: 10px;
+@media screen and (max-width: 769px) {
+  .phone-text {
+    font-size: 8vw;
   }
 }
 
