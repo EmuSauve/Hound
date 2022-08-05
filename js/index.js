@@ -26,25 +26,25 @@ window.onresize = function(e) {
     }
 };
 
-// GoToTop
-$(function(){
+// // GoToTop
+// $(function(){
 
-    /* TOP-Pageボタン制御 */
-    var topBtn = $('.goto-top-wrapper');
-    topBtn.hide();
-    //スクロールが100に達したらボタン表示
-    $(window).scroll(function () {
-        if ($(this).scrollTop() > 100) {
-            topBtn.fadeIn();
-        } else {
-            topBtn.fadeOut();
-        }
-    });
-    // //スクロールしてトップ
-    // topBtn.click(function () {
-    //     $('body,html').animate({
-    //         scrollTop: 0
-    //     }, 500);
-    //     return false;
-    // });
-});
+//     /* TOP-Pageボタン制御 */
+//     var topBtn = $('.goto-top-wrapper');
+//     topBtn.hide();
+//     //スクロールが100に達したらボタン表示
+//     $(window).scroll(function () {
+//         if ($(this).scrollTop() > 100) {
+//             topBtn.fadeIn();
+//         } else {
+//             topBtn.fadeOut();
+//         }
+//     });
+//     // //スクロールしてトップ
+//     // topBtn.click(function () {
+//     //     $('body,html').animate({
+//     //         scrollTop: 0
+//     //     }, 500);
+//     //     return false;
+//     // });
+// });
