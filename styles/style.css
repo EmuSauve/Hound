@@ -175,6 +175,14 @@ h5.jp {
   word-break: keep-all;
 }
 
+.phone-number {
+  color: #151515;
+}
+
+.phone-number-reverse {
+  color: #FFFFFF;
+}
+
 .button-primary {
   border-radius: 100px;
   text-align: center;

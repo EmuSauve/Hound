@@ -135,3 +135,11 @@ h5.jp {
 .line-break {
     word-break: keep-all;
 }
+
+.phone-number {
+    color: $text-color;
+}
+
+.phone-number-reverse {
+    color: $text-color-reverse;
+}
