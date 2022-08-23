@@ -36,6 +36,9 @@ h3.jp {
     @include tab{
         font-size: 20px;
     }
+    @include sp {
+        text-align: center;
+    }
 }
 
 h3.en {
@@ -46,6 +49,9 @@ h3.en {
     text-transform: uppercase;
     @include tab{
         font-size: 30px;
+    }
+    @include sp {
+        text-align: center;
     }
 }
 
@@ -89,6 +95,9 @@ h5.jp {
     width: 80px;
     margin: auto;
     margin-bottom: var(--padding-sm);
+    @include sp{
+        margin: 0 auto var(--padding-sm) !important;
+    }
 }
 
 .h-line-long {

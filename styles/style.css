@@ -64,6 +64,11 @@ h3.jp {
     font-size: 20px;
   }
 }
+@media screen and (max-width: 769px) {
+  h3.jp {
+    text-align: center;
+  }
+}
 
 h3.en {
   font-family: "Montserrat", sans-serif;
@@ -75,6 +80,11 @@ h3.en {
 @media screen and (max-width: 992px) {
   h3.en {
     font-size: 30px;
+  }
+}
+@media screen and (max-width: 769px) {
+  h3.en {
+    text-align: center;
   }
 }
 
@@ -122,6 +132,11 @@ h5.jp {
   width: 80px;
   margin: auto;
   margin-bottom: var(--padding-sm);
+}
+@media screen and (max-width: 769px) {
+  .h-line {
+    margin: 0 auto var(--padding-sm) !important;
+  }
 }
 
 .h-line-long {
@@ -857,6 +872,11 @@ header.main .header-logo {
   margin-top: var(--padding-xl) !important;
   padding-bottom: var(--padding-lg) !important;
 }
+@media screen and (max-width: 769px) {
+  .subpage-big-section {
+    text-align: center;
+  }
+}
 
 .overview-info {
   width: 46% !important;
@@ -950,6 +970,11 @@ header.main .header-logo {
     align-items: flex-start;
   }
 }
+@media screen and (max-width: 769px) {
+  .contact-page-phone .contact-page-phone-box {
+    align-items: center;
+  }
+}
 .contact-page-phone .phone-text {
   font-size: 50px;
   margin-right: 20px;
@@ -957,6 +982,7 @@ header.main .header-logo {
 @media screen and (max-width: 992px) {
   .contact-page-phone .phone-text {
     font-size: 30px;
+    margin-right: 0px;
   }
 }
 
@@ -1212,6 +1238,17 @@ button, .button-link {
 }
 .align-left .h-line {
   margin-left: 0;
+}
+@media screen and (max-width: 769px) {
+  .align-left {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .mobile-align-center {
+    text-align: center;
+  }
 }
 
 .background-color-sub {

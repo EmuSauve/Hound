@@ -25,6 +25,9 @@
 .subpage-big-section {
     margin-top: var(--padding-xl) !important;
     padding-bottom: var(--padding-lg) !important;
+    @include sp {
+        text-align: center;
+    }
 }
 
 .overview-info {
@@ -117,12 +120,16 @@
             flex-direction: column;
             align-items: flex-start;
         }
+        @include sp {
+            align-items: center;
+        }
     }
     .phone-text {
         font-size: 50px;
         margin-right: 20px;
         @include tab {
             font-size: 30px;
+            margin-right: 0px;
         }
     }
 }

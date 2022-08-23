@@ -156,6 +156,15 @@ button, .button-link {
     .h-line {
         margin-left: 0;
     }
+    @include sp {
+        text-align: center;
+    }
+}
+
+.mobile-align-center {
+    @include sp {
+        text-align: center;
+    }
 }
 
 .background-color-sub {
