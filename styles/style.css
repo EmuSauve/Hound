@@ -1298,5 +1298,10 @@ footer {
 .copyright {
   margin-top: var(--padding-sm);
 }
+@media screen and (max-width: 769px) {
+  .copyright {
+    font-size: 12px;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */

@@ -210,6 +210,9 @@ footer {
 
 .copyright {
     margin-top: var(--padding-sm);
+    @include sp {
+        font-size: 12px;
+    }
 }
 
 
