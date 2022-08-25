@@ -172,6 +172,9 @@
     }
     .contact-form-service,.contact-form-document {
         margin-right: 20px;
+        @include sp {
+            display: block;
+        }
     }
 }
 

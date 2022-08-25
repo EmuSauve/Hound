@@ -1029,6 +1029,11 @@ header.main .header-logo {
 .contact-form-item .contact-form-service, .contact-form-item .contact-form-document {
   margin-right: 20px;
 }
+@media screen and (max-width: 769px) {
+  .contact-form-item .contact-form-service, .contact-form-item .contact-form-document {
+    display: block;
+  }
+}
 
 .contact-form-input {
   height: 50px;
