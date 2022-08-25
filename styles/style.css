@@ -934,6 +934,9 @@ header.main .header-logo {
   .flow .flow-arrow {
     text-align: center;
   }
+  .flow .flow-arrow img {
+    margin-left: 0px;
+  }
 }
 
 .members {
